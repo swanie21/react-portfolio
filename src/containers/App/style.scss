@@ -1,0 +1,61 @@
+@import '../../styles/_variables';
+@import '../../styles/_fonts';
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+  @media screen and ($M) {
+    margin: 3%;
+  }
+}
+
+.right-box {
+  background-color: lighten($teal, 10%);
+  height: 100vh;
+  width: 50%;
+
+  @media screen and ($M) {
+    height: 90vh;
+  }
+}
+
+.left-box {
+  background-color: $teal;
+  height: 100vh;
+  width: 50%;
+
+  @media screen and ($M) {
+    height: 90vh;
+  }
+}
+
+.title {
+  color: black;
+  background-clip: text;
+  background: $black;
+  font-family: $font-lato;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 40%;
+  width: 100%;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-fill-color: lighten($black, 12%);
+  -webkit-text-stroke-width: 5px;
+  -webkit-background-clip: text;
+  -moz-text-stroke-color: transparent;
+  -moz-text-fill-color: lighten($black, 12%);
+  -moz-text-stroke-width: 5px;
+  -moz-background-clip: text;
+
+  @media screen and ($MS) {
+    font-size: 48px;
+    top: 45%;
+    width: 100% - 6%;
+  }
+}

@@ -1,0 +1,12 @@
+@mixin hover-sweep-to-top {
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(0);
+  transform-origin: 0 100%;
+  transition: transform 0.3s ease-out;
+  z-index: -1;
+}

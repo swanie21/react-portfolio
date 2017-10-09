@@ -1,0 +1,26 @@
+// Color palette
+
+$teal: #66B6B0;
+
+$purple: #956392;
+
+$yellow: #FFD460;
+
+$pink: #F15C5E;
+
+$black: #222;
+
+$white: #FFF;
+
+
+// Media query breakpoints
+
+$breakpoint-small: 320px;
+$breakpoint-medium-small: 415px;
+$breakpoint-medium: 770px;
+$breakpoint-large: 1025px;
+
+$S: 'min-width:' + $breakpoint-small;
+$MS: 'min-width:' + $breakpoint-medium-small;
+$M: 'min-width:' + $breakpoint-medium;
+$L: 'min-width:' + $breakpoint-large

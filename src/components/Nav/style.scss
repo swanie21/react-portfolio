@@ -1,0 +1,117 @@
+@import '../../styles/_variables';
+@import '../../styles/_fonts';
+@import '../../styles/_mixins';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+
+  @media screen and ($M) {
+    width: 100% - 6%;
+  }
+
+  &__item {
+    align-items: center;
+    color: $black;
+    display: flex;
+    font-family: $font-lato;
+    font-size: 20px;
+    height: 60px;
+    justify-content: center;
+    width: 25%;
+
+    &:first-child {
+      background: $yellow;
+      color: $black;
+      cursor: pointer;
+      position: relative;
+      transform: translateZ(0);
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:before {
+        background: darken($yellow, 10%);
+        @include hover-sweep-to-top;
+      }
+
+      &:hover, &:focus, &:active {
+        color: $white;
+
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      background: $pink;
+      color: $black;
+      cursor: pointer;
+      position: relative;
+      transform: translateZ(0);
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:before {
+        background: darken($pink, 5%);
+        @include hover-sweep-to-top;
+      }
+
+      &:hover, &:focus, &:active {
+        color: $white;
+
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      background: $purple;
+      color: $black;
+      cursor: pointer;
+      position: relative;
+      transform: translateZ(0);
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:before {
+        background: darken($purple, 20%);
+        @include hover-sweep-to-top;
+      }
+
+      &:hover, &:focus, &:active {
+        a {
+          color: $white;
+        }
+
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+    }
+
+    &:nth-last-child(1) {
+      background: $yellow;
+      color: $black;
+      cursor: pointer;
+      position: relative;
+      transform: translateZ(0);
+      transition: background 0.3s ease, color 0.3s ease;
+
+      &:before {
+        background: darken($yellow, 10%);
+        @include hover-sweep-to-top;
+      }
+
+      &:hover, &:focus, &:active {
+        a {
+          color: $white;
+        }
+
+        &:before {
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+}
